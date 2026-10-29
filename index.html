@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GolBot - Especialista em Copa do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <header class="chat-header">
+            <div class="header-content">
+                <div class="trophy-icon">🏆</div>
+                <div>
+                    <h1>GolBot</h1>
+                    <p class="subtitle">Especialista em Copa do Mundo</p>
+                </div>
+            </div>
+            <div class="status-badge"><span class="dot"></span> Online</div>
+        </header>
+
+        <main class="chat-messages" id="chat-messages">
+            <div class="message assistant">
+                <div class="message-content">
+                    Olá, torcedor! Sou o <strong>GolBot</strong>, seu especialista em história, seleções, estatísticas e curiosidades de todas as Copas do Mundo! ⚽<br><br>
+                    Qual é a sua dúvida ou tema favorito sobre o maior torneio do planeta?
+                </div>
+            </div>
+        </main>
+
+        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+            <div class="dot-flashing"></div>
+            <span>GolBot está analisando a jogada...</span>
+        </div>
+
+        <form class="chat-input-area" id="chat-form">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Pergunte sobre finais, artilheiros, Copas inesquecíveis..." 
+                autocomplete="off"
+                required
+            >
+            <button type="submit" id="send-btn" aria-label="Enviar mensagem">
+                <span>Enviar</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
